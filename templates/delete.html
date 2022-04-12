@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <form action="/delete" method="post">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><B>DELETE A PATIENT</B></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile number</td>
+                            <td><input name="mobno" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-danger">DELETE</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
